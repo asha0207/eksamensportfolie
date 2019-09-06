@@ -1,0 +1,140 @@
+* {
+    box-sizing: border-box;
+    color: #dce6f0;
+}
+
+body {
+    margin: 0;
+    background-image: url(billeder/forside.jpg);
+    background-size: cover
+}
+
+img {
+    width: 100%
+}
+
+#om {
+    display: flex;
+    background-color: black;
+    background-size: cover
+}
+
+#portfolio {
+    display: flex;
+    background-color: black;
+    background-size: cover
+}
+
+* {
+    margin: 0px;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+header nav a {
+    font-family: 'Fredericka the Great', sans-serif;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Fredericka the Great', cursive;
+}
+
+h2 {
+    text-align: center;
+    font-family: 'Fredericka the Great', cursive;
+}
+
+a {
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+#sidebar {
+    position: fixed;
+    width: 200px;
+    height: 100%;
+    background: #151719;
+    left: -200px;
+    top: 0;
+    transition: all 500ms linear;
+}
+
+#sidebar.active {
+    left: 0px;
+    top: 0;
+
+}
+
+#sidebar ul li {
+    color: #dce6f0;
+    list-style: none;
+    padding: 15px 10px;
+    border-bottom: 1px solid rgba(100, 100, 100, 0.3);
+
+}
+
+#sidebar .toggle-btn {
+    position: absolute;
+    right: -40px;
+    top: 20px;
+
+}
+
+#sidebar .toggle-btn span {
+    display: block;
+    width: 30px;
+    height: 5px;
+    background: #dce6f0;
+    margin: 5px 0px;
+
+}
+
+p {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 1rem;
+}
+
+#sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5vw;
+    flex-direction: row;
+}
+
+#omtxt {
+    margin: 5vw;
+    flex-basis: 1;
+    flex-grow: 300px;
+    width: 400px;
+    text-align: justify;
+}
+
+#ombillede {
+    margin: 5vw;
+    flex-basis: 1;
+    flex-grow: 300px;
+    width: 400px;
+}
+
+.section {
+    margin: 5vw;
+    text-align: justify;
+}
+
+
+.link {
+    border: 2px solid #dce6f0;
+    padding: 5px;
+}
+
+li {
+    list-style-type: none;
+}
+
+
+@media only screen and (min-width: 900px) {
+    .section {
+        margin: 10vw 20vw 5vw 20vw;
+    }
+}
